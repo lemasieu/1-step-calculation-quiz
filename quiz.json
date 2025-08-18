@@ -1,0 +1,130 @@
+{
+    "addition": [
+        {
+            "question_id": "add_1",
+            "question": "Một bể nước ban đầu có so1 mét khối nước, người ta đổ so2 mét khối nước vào bể. Hỏi bể chứa bao nhiêu mét khối nước?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "add_2",
+            "question": "Một vườn cây cảnh ban đầu có so1 cây, người ta dời so2 cây vào trong vườn. Hỏi vườn có bao nhiêu cây?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "add_3",
+            "question": "Một bến xe ban đầu có so1 người, xe trung chuyển chở so2 người đến bến. Hỏi bến xe có bao nhiêu người?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "add_4",
+            "question": "Một phòng thi ban đầu có so1 học sinh, giám thị chuyển so2 học sinh vào phòng thi. Hỏi phòng thi có bao nhiêu học sinh?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "add_5",
+            "question": "Một nồi hấp bánh ban đầu có so1 cái bánh bao, chủ nồi lấy so2 cái bánh bao bỏ vào nồi. Hỏi nồi hấp bánh có bao nhiêu cái bánh bao?",
+            "answer": null,
+            "explanation": null
+        }
+    ],
+    "subtraction": [
+        {
+            "question_id": "sub_1",
+            "question": "Một bể nước ban đầu có so1 mét khối nước, người ta đổ so2 mét khối nước ra khỏi bể. Hỏi bể chứa bao nhiêu mét khối nước?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "sub_2",
+            "question": "Một vườn cây cảnh ban đầu có so1 cây, người ta dời so2 cây ra khỏi vườn. Hỏi vườn có bao nhiêu cây?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "sub_3",
+            "question": "Một bến xe ban đầu có so1 người, xe trung chuyển chở so2 người rời bến. Hỏi bến xe có bao nhiêu người?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "sub_4",
+            "question": "Một phòng thi ban đầu có so1 học sinh, giám thị chuyển so2 học sinh qua phòng thi khác. Hỏi phòng thi có bao nhiêu học sinh?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "sub_5",
+            "question": "Một nồi hấp bánh ban đầu có so1 cái bánh bao, chủ nồi lấy so2 cái bánh bao đem ra bán. Hỏi nồi hấp bánh có bao nhiêu cái bánh bao?",
+            "answer": null,
+            "explanation": null
+        }
+    ],
+    "multiplication": [
+        {
+            "question_id": "mul_1",
+            "question": "Một giá sách chứa được so1 quyển sách, mỗi quyển dày so2 cm. Giá sách có chiều dài bao nhiêu cm?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "mul_2",
+            "question": "Một tòa nhà có so1 tầng, mỗi tầng đều có so2 phòng. Tổng số phòng trong tòa nhà là bao nhiêu?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "mul_3",
+            "question": "Một mảnh đất hình vuông có diện tích lát gạch được so1 viên gạch vuông, mỗi viên gạch vuông có diện tích so2 cm². Tổng diện tích lát gạch được của mảnh đất là bao nhiêu cm²?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "mul_4",
+            "question": "Một cuộn vải có diện tích may được so1 bộ quần áo, mỗi bộ quần áo cần so2 m² vải. Tổng diện tích của cuộn vải là bao nhiêu m²?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "mul_5",
+            "question": "Một tệp giấy chứng nhận đều gồm có so1 bản, mỗi bản cần so2 tờ giấy. Tổng số tờ giấy trong tệp là bao nhiêu?",
+            "answer": null,
+            "explanation": null
+        }
+    ],
+    "division": [
+        {
+            "question_id": "div_1",
+            "question": "Một giá sách có chiều dài so1 cm, mỗi quyển dày so2 cm. Giá sách chứa được tối đa bao nhiêu quyển?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "div_2",
+            "question": "Một tòa nhà có so1 phòng, mỗi tầng đều có so2 phòng. Tổng số tầng trong tòa nhà là bao nhiêu?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "div_3",
+            "question": "Một mảnh đất hình vuông có diện tích lát gạch được so1 cm², mỗi viên gạch vuông có diện tích so2 cm². Tổng diện tích lát gạch được của mảnh đất là bao nhiêu viên gạch vuông?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "div_4",
+            "question": "Một cuộn vải có diện tích may được so1 m², mỗi bộ quần áo cần so2 m² vải. Tổng số bộ quần áo may được là bao nhiêu?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "div_5",
+            "question": "Một tệp giấy chứng nhận đều gồm có so1 tờ giấy, mỗi bản cần so2 tờ giấy. Tổng số bản trong tệp là bao nhiêu?",
+            "answer": null,
+            "explanation": null
+        }
+    ]
+}
