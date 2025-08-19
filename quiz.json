@@ -29,6 +29,36 @@
             "question": "Một nồi hấp bánh ban đầu có so1 cái bánh bao, chủ nồi lấy so2 cái bánh bao bỏ vào nồi. Hỏi nồi hấp bánh có bao nhiêu cái bánh bao?",
             "answer": null,
             "explanation": null
+        },
+        {
+            "question_id": "add_6",
+            "question": "Một giá sách ban đầu chứa so1 quyển sách, người ta bỏ so2 quyển dày so2 cm vào. Giá sách có tất cả bao nhiêu quyển?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "add_7",
+            "question": "Một tòa nhà có so1 tầng, người ta xây thêm so2 tầng để tăng số phòng. Tổng số tầng trong tòa nhà là bao nhiêu?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "add_8",
+            "question": "Một mảnh đất hình vuông có diện tích lát gạch được so1 viên gạch vuông, người ta mở rộng miếng đất có thể lát được thêm so2 viên gạch nữa. Tổng số gạch lát được của mảnh đất là bao nhiêu?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "add_9",
+            "question": "Một cuộn vải có diện tích may được so1 m², người ta khuyến mãi thêm so2 m² vải để may. Tổng số vải may được là bao nhiêu m²?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "add_10",
+            "question": "Một tệp giấy chứng nhận đều gồm có so1 tờ giấy, mỗi tệp cần thêm so2 tờ giấy phụ lục. Tổng số tờ giấy trong tệp là bao nhiêu?",
+            "answer": null,
+            "explanation": null
         }
     ],
     "subtraction": [
@@ -59,6 +89,36 @@
         {
             "question_id": "sub_5",
             "question": "Một nồi hấp bánh ban đầu có so1 cái bánh bao, chủ nồi lấy so2 cái bánh bao đem ra bán. Hỏi nồi hấp bánh có bao nhiêu cái bánh bao?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "sub_6",
+            "question": "Một giá sách ban đầu chứa so1 quyển sách, người ta bỏ so2 quyển dày so2 cm ra. Giá sách có tất cả bao nhiêu quyển?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "sub_7",
+            "question": "Một tòa nhà có so1 tầng, người ta đóng lại so2 tầng để tránh dư phòng. Tổng số tầng trong tòa nhà là bao nhiêu?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "sub_8",
+            "question": "Một mảnh đất hình vuông có diện tích lát gạch được so1 viên gạch vuông, người ta bán đi một phần miếng đất có thể lát được so2 viên gạch. Tổng số gạch lát được của mảnh đất sau khi bán là bao nhiêu?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "sub_9",
+            "question": "Một cuộn vải có diện tích may được so1 m², người ta đã cắt so2 m² vải để may rèm. Tổng số vải còn may được là bao nhiêu m²?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "sub_10",
+            "question": "Một tệp giấy chứng nhận đều gồm có so1 tờ giấy, mỗi tệp bị in dư so2 tờ giấy phụ lục nên được lấy ra. Tổng số tờ giấy trong tệp sau đó là bao nhiêu?",
             "answer": null,
             "explanation": null
         }
@@ -93,6 +153,36 @@
             "question": "Một tệp giấy chứng nhận đều gồm có so1 bản, mỗi bản cần so2 tờ giấy. Tổng số tờ giấy trong tệp là bao nhiêu?",
             "answer": null,
             "explanation": null
+        },
+        {
+            "question_id": "mul_6",
+            "question": "Mỗi bể nước ban đầu có so1 mét khối nước, người ta có so2 bể như vậy. Hỏi tất cả các bể chứa bao nhiêu mét khối nước?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "mul_7",
+            "question": "Một vườn cây cảnh ban đầu có so1 cây, người ta có so2 vườn cây như vậy. Hỏi người ta có bao nhiêu cây?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "mul_8",
+            "question": "Mỗi bến xe ban đầu có so1 người, nhà xe có so2 bến như vậy. Hỏi nhà xe có bao nhiêu người ở bến?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "mul_9",
+            "question": "Mỗi phòng thi ban đầu có so1 học sinh, giám thị đang giám sát so2 phòng thi như vậy. Hỏi có bao nhiêu học sinh đang thi?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "mul_10",
+            "question": "Mỗi nồi hấp bánh ban đầu có so1 cái bánh bao, chủ nồi có so2 nồi như vậy để bán. Hỏi chủ nồi có bao nhiêu cái bánh bao?",
+            "answer": null,
+            "explanation": null
         }
     ],
     "division": [
@@ -123,6 +213,36 @@
         {
             "question_id": "div_5",
             "question": "Một tệp giấy chứng nhận đều gồm có so1 tờ giấy, mỗi bản cần so2 tờ giấy. Tổng số bản trong tệp là bao nhiêu?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "div_6",
+            "question": "so2 bể nước ban đầu có tổng cộng so1 mét khối nước, người ta đo số nước mỗi bể đều bằng nhau. Hỏi mỗi bể chứa bao nhiêu mét khối nước?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "div_7",
+            "question": "Một người ban đầu có tổng cộng so1 cây được sắp đều cho so2 vườn cây như vậy. Hỏi người ta có bao nhiêu cây ở mỗi vườn?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "div_8",
+            "question": "Một nhà xe ban đầu có tổng cộng so1 người phân bổ đều ở so2 bến. Hỏi nhà xe có bao nhiêu người ở mỗi bến?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "div_9",
+            "question": "Một trường thi ban đầu có tổng cộng so1 học sinh được giám thị phân bổ đều vào so2 phòng thi. Hỏi có bao nhiêu học sinh đang thi ở mỗi phòng?",
+            "answer": null,
+            "explanation": null
+        },
+        {
+            "question_id": "div_10",
+            "question": "Một chủ nồi hấp bánh ban đầu có tổng cộng so1 cái bánh bao, chủ nồi bỏ đều bánh vào so2 nồi như vậy để bán. Hỏi mỗi nồi có bao nhiêu cái bánh bao?",
             "answer": null,
             "explanation": null
         }
