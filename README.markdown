@@ -14,7 +14,7 @@ A web-based quiz application designed for Grade 4-5 students to practice basic a
 - **JSON-Driven**: Questions are stored in a separate `quiz.json` file for easy modification.
 
 ## Demo
-Try the live demo at: [[https://mãsieu.vn/github/1-step-calculation-quiz](https://mãsieu.vn/github/1-step-calculation-quiz)](https://xn--msiu-goa8b.vn/github/1-step-calculation-quiz/)
+Try the live demo at: [[https://mãsiêu.vn/github/1-step-calculation-quiz](https://mãsiêu.vn/github/1-step-calculation-quiz)](https://xn--msiu-goa8b.vn/github/1-step-calculation-quiz/)
 
 ## Installation
 1. Clone the repository:
