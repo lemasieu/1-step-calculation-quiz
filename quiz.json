@@ -32,7 +32,7 @@
         },
         {
             "question_id": "add_6",
-            "question": "Một giá sách ban đầu chứa so1 quyển sách, người ta bỏ so2 quyển dày so2 cm vào. Giá sách có tất cả bao nhiêu quyển?",
+            "question": "Một giá sách ban đầu chứa so1 quyển sách, người ta bỏ so2 quyển vào. Giá sách có tất cả bao nhiêu quyển?",
             "answer": null,
             "explanation": null
         },
@@ -94,13 +94,13 @@
         },
         {
             "question_id": "sub_6",
-            "question": "Một giá sách ban đầu chứa so1 quyển sách, người ta bỏ so2 quyển dày so2 cm ra. Giá sách có tất cả bao nhiêu quyển?",
+            "question": "Một giá sách ban đầu chứa so1 quyển sách, người ta bỏ so2 quyển ra. Giá sách có tất cả bao nhiêu quyển?",
             "answer": null,
             "explanation": null
         },
         {
             "question_id": "sub_7",
-            "question": "Một tòa nhà có so1 tầng, người ta đóng lại so2 tầng để tránh dư phòng. Tổng số tầng trong tòa nhà là bao nhiêu?",
+            "question": "Một tòa nhà có so1 tầng, người ta đóng lại so2 tầng để tránh thừa phòng. Tổng số tầng trong tòa nhà là bao nhiêu?",
             "answer": null,
             "explanation": null
         },
