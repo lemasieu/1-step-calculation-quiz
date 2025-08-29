@@ -64,6 +64,7 @@ async function loadQuiz() {
         let currentIndex = 0;
         let correctAnswers = 0;
         let answered = false;
+        const userAnswers = new Array(allQuestions.length).fill(null); // Lưu đáp án người dùng và trạng thái {userAnswer, isCorrect}
 
         const questionEl = document.getElementById('question');
         const answerInput = document.getElementById('answer');
@@ -71,6 +72,51 @@ async function loadQuiz() {
         const nextBtn = document.getElementById('next');
         const resultEl = document.getElementById('result');
         const progressEl = document.getElementById('progress');
+        const navigationEl = document.getElementById('navigation');
+
+        // Tạo 20 nút navigation (2 hàng, mỗi hàng 10 nút)
+        for (let i = 0; i < allQuestions.length; i++) {
+            const btn = document.createElement('button');
+            btn.classList.add('nav-btn', 'unanswered');
+            btn.textContent = i + 1;
+            btn.disabled = true;
+            btn.addEventListener('click', () => {
+                if (!btn.disabled) {
+                    currentIndex = i;
+                    displayQuestion();
+                }
+            });
+            navigationEl.appendChild(btn);
+        }
+        const navButtons = navigationEl.querySelectorAll('.nav-btn');
+
+        // Cập nhật màu sắc và trạng thái nút
+        function updateNavButtons() {
+            navButtons.forEach((btn, idx) => {
+                if (idx === currentIndex) {
+                    btn.classList.add('current');
+                    btn.disabled = false;
+                } else {
+                    btn.classList.remove('current');
+                }
+                if (userAnswers[idx] !== null) {
+                    btn.disabled = false;
+                    if (userAnswers[idx].isCorrect) {
+                        btn.classList.add('correct');
+                        btn.classList.remove('incorrect', 'unanswered');
+                    } else {
+                        btn.classList.add('incorrect');
+                        btn.classList.remove('correct', 'unanswered');
+                    }
+                } else if (idx > currentIndex) {
+                    btn.classList.add('unanswered');
+                    btn.disabled = true;
+                    btn.classList.remove('correct', 'incorrect', 'current');
+                } else {
+                    btn.disabled = false;
+                }
+            });
+        }
 
         // Hàm hiển thị câu hỏi hiện tại
         function displayQuestion() {
@@ -81,17 +127,37 @@ async function loadQuiz() {
                 nextBtn.disabled = true;
                 const percentage = ((correctAnswers / allQuestions.length) * 100).toFixed(2);
                 resultEl.innerHTML = `Kết quả cuối cùng: ${correctAnswers}/${allQuestions.length} đúng (${percentage}%)`;
+                updateNavButtons();
                 return;
             }
             const q = allQuestions[currentIndex];
             questionEl.textContent = q.question;
-            answerInput.value = '';
-            answerInput.disabled = false;
-            submitBtn.disabled = false;
-            nextBtn.disabled = true;
-            resultEl.textContent = '';
-            answered = false;
+            const prevAnswer = userAnswers[currentIndex];
+            if (prevAnswer !== null) {
+                // Xem lại: disable input/submit, hiển thị đáp án cũ và result
+                answerInput.value = prevAnswer.userAnswer;
+                answerInput.disabled = true;
+                submitBtn.disabled = true;
+                nextBtn.disabled = false;
+                answered = true;
+                if (prevAnswer.isCorrect) {
+                    resultEl.innerHTML = `Đúng! Đáp án: ${q.answer}<br>Giải thích: ${q.explanation}`;
+                    resultEl.style.color = '#4caf50';
+                } else {
+                    resultEl.innerHTML = `Sai! Đáp án đúng: ${q.answer}<br>Giải thích: ${q.explanation}`;
+                    resultEl.style.color = '#f44336';
+                }
+            } else {
+                // Câu mới
+                answerInput.value = '';
+                answerInput.disabled = false;
+                submitBtn.disabled = false;
+                nextBtn.disabled = true;
+                resultEl.textContent = '';
+                answered = false;
+            }
             updateProgress();
+            updateNavButtons();
         }
 
         // Cập nhật tiến độ
@@ -102,19 +168,21 @@ async function loadQuiz() {
 
         // Xử lý submit trả lời
         submitBtn.addEventListener('click', () => {
-            if (answered) return;
+            if (answered || userAnswers[currentIndex] !== null) return;
             const userAnswer = parseInt(answerInput.value.trim());
             if (isNaN(userAnswer)) {
                 resultEl.textContent = 'Vui lòng nhập số!';
                 return;
             }
             const q = allQuestions[currentIndex];
+            const isCorrect = userAnswer === q.answer;
+            userAnswers[currentIndex] = { userAnswer, isCorrect };
+            if (isCorrect) correctAnswers++;
             answered = true;
             answerInput.disabled = true;
             submitBtn.disabled = true;
             nextBtn.disabled = false;
-            if (userAnswer === q.answer) {
-                correctAnswers++;
+            if (isCorrect) {
                 resultEl.innerHTML = `Đúng! Đáp án: ${q.answer}<br>Giải thích: ${q.explanation}`;
                 resultEl.style.color = '#4caf50';
             } else {
@@ -122,16 +190,19 @@ async function loadQuiz() {
                 resultEl.style.color = '#f44336';
             }
             updateProgress();
+            updateNavButtons();
         });
 
         // Next câu
         nextBtn.addEventListener('click', () => {
-            if (!answered) return;
+            if (!answered && userAnswers[currentIndex] === null) return;
             currentIndex++;
             displayQuestion();
         });
 
         // Bắt đầu quiz
+        navButtons[0].disabled = false;
+        navButtons[0].classList.add('current');
         displayQuestion();
     } catch (error) {
         console.error('Lỗi khi tải quiz:', error);
