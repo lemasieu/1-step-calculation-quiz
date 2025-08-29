@@ -1,6 +1,6 @@
 # 1-Step Calculation Quiz
 
-A web-based quiz application designed for Grade 4-5 students to practice basic arithmetic operations (addition, subtraction, multiplication, division). The quiz features a dark theme, randomized questions with placeholders, progress tracking, and interactive controls to ensure correct answer submission before proceeding.
+A web-based quiz application designed for Grade 4-5 students to practice basic arithmetic operations (addition, subtraction, multiplication, division). The quiz features a dark theme, randomized questions with placeholders, progress tracking, interactive controls, and navigation buttons to review answered questions.
 
 ## Features
 - **Dark Theme**: Clean, modern dark interface for comfortable use.
@@ -11,10 +11,15 @@ A web-based quiz application designed for Grade 4-5 students to practice basic a
   - Answer input and submit button are disabled after answering.
   - "Next" button is locked until the current question is answered.
   - Feedback includes correct/incorrect status, correct answer, and explanation.
+- **Navigation Buttons**: 20 buttons (arranged in 2 rows of 10) allow reviewing answered questions or the current question:
+  - Green for correct answers.
+  - Red for incorrect answers.
+  - Blue for the current question.
+  - Gray (disabled) for unanswered questions.
 - **JSON-Driven**: Questions are stored in a separate `quiz.json` file for easy modification.
 
 ## Demo
-Try the live demo at: [[https://mãsiêu.vn/github/1-step-calculation-quiz](https://mãsiêu.vn/github/1-step-calculation-quiz)](https://xn--msiu-goa8b.vn/github/1-step-calculation-quiz/)
+Try the live demo at: [https://mãsieu.vn/github/1-step-calculation-quiz](https://mãsieu.vn/github/1-step-calculation-quiz)
 
 ## Installation
 1. Clone the repository:
@@ -38,8 +43,8 @@ Try the live demo at: [[https://mãsiêu.vn/github/1-step-calculation-quiz](http
 
 ## File Structure
 - `index.html`: Main HTML structure for the quiz interface.
-- `styles.css`: CSS for dark theme and responsive layout.
-- `script.js`: JavaScript logic for fetching `quiz.json`, randomizing numbers, and handling quiz interactions.
+- `styles.css`: CSS for dark theme, responsive layout, and navigation button styling.
+- `script.js`: JavaScript logic for fetching `quiz.json`, randomizing numbers, handling quiz interactions, and navigation.
 - `quiz.json`: JSON template with question placeholders (`so1`, `so2`) for addition, subtraction, multiplication, and division.
 
 ## Usage
@@ -47,14 +52,20 @@ Try the live demo at: [[https://mãsiêu.vn/github/1-step-calculation-quiz](http
 2. Answer each question by entering a number in the input field and clicking "Trả lời" (Submit).
 3. View feedback (correct/incorrect, answer, explanation) after submitting.
 4. Click "Tiếp theo" (Next) to proceed to the next question (enabled only after answering).
-5. Track progress via the counter (correct/total, percentage) displayed above the question.
-6. Complete all 20 questions to see the final score.
+5. Use the navigation buttons (1-20) to review answered questions or the current question:
+   - Green buttons indicate correct answers.
+   - Red buttons indicate incorrect answers.
+   - Blue button indicates the current question.
+   - Gray buttons (disabled) indicate unanswered questions.
+6. Track progress via the counter (correct/total, percentage) displayed above the question.
+7. Complete all 20 questions to see the final score, with the option to review any question.
 
 ## Customization
 - **Add Questions**: Edit `quiz.json` to include more questions, following the same structure with `so1`, `so2` placeholders.
 - **Adjust Number Ranges**: Modify `getRandomInt` or `getDivisibleNumbers` in `script.js` to change the range of random numbers (e.g., currently 1-100 for addition, 50-200 for subtraction, 2-20/2-10 for multiplication, and integer division).
 - **Support Remainders**: Update `getDivisibleNumbers` in `script.js` to include remainders for division questions if desired.
-- **Change Styling**: Edit `styles.css` to adjust colors, fonts, or layout.
+- **Change Styling**: Edit `styles.css` to adjust colors, fonts, or layout (e.g., navigation button size or arrangement).
+- **Increase Questions**: Add more questions to `quiz.json` and update the navigation button creation in `script.js` to support more than 20 questions (e.g., 40 buttons).
 
 ## Contributing
 Feel free to fork the repository, make improvements, and submit pull requests. Issues and feature requests can be reported on the [GitHub Issues page](https://github.com/lemasieu/1-step-calculation-quiz/issues).
