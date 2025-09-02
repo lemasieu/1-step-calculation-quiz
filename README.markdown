@@ -4,7 +4,7 @@ A web-based quiz application designed for Grade 4-5 students to practice basic a
 
 ## Features
 - **Dark Theme**: Clean, modern dark interface for comfortable use.
-- **Randomized Questions**: Questions are generated from a JSON template with placeholders (`so1`, `so2`) replaced by random numbers suitable for Grade 4-5 (e.g., 1-200, ensuring integer division results).
+- **Randomized Questions**: Questions are generated from a JSON template with placeholders (`so1`, `so2`) replaced by random numbers suitable for Grade 4-5, where `so1` is always divisible by `so2` to increase difficulty and test operation recognition.
 - **Four Operations**: 20 questions (5 per operation: addition, subtraction, multiplication, division), shuffled randomly.
 - **Progress Tracking**: Displays correct answers, total questions, and percentage (updated in real-time and at quiz completion).
 - **Interactive Controls**: 
@@ -62,7 +62,7 @@ Try the live demo at: [https://mãsieu.vn/github/1-step-calculation-quiz](https:
 
 ## Customization
 - **Add Questions**: Edit `quiz.json` to include more questions, following the same structure with `so1`, `so2` placeholders.
-- **Adjust Number Ranges**: Modify `getRandomInt` or `getDivisibleNumbers` in `script.js` to change the range of random numbers (e.g., currently 1-100 for addition, 50-200 for subtraction, 2-20/2-10 for multiplication, and integer division).
+- **Adjust Number Ranges**: Modify `getDivisibleNumbers` in `script.js` to change the range of random numbers (e.g., currently `so1` up to 200 and `so2` from 2-10 for all operations, ensuring `so1` is divisible by `so2`).
 - **Support Remainders**: Update `getDivisibleNumbers` in `script.js` to include remainders for division questions if desired.
 - **Change Styling**: Edit `styles.css` to adjust colors, fonts, or layout (e.g., navigation button size or arrangement).
 - **Increase Questions**: Add more questions to `quiz.json` and update the navigation button creation in `script.js` to support more than 20 questions (e.g., 40 buttons).
