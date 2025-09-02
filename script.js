@@ -3,7 +3,7 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// Hàm sinh số cho phép chia (đảm bảo chia nguyên, không dư)
+// Hàm sinh số để so1 chia hết cho so2
 function getDivisibleNumbers(maxTotal, minDivider) {
     const divider = getRandomInt(minDivider, 10); // so2 nhỏ (2-10)
     const quotient = getRandomInt(1, Math.floor(maxTotal / divider));
@@ -22,19 +22,16 @@ function randomizeQuiz(template) {
                 [so1, so2, answer] = getDivisibleNumbers(200, 2);
                 explanationTemplate = `${so1} ÷ ${so2} = ${answer}, chia tổng cho đơn vị.`;
             } else if (operation === 'multiplication') {
-                so1 = getRandomInt(2, 20);
-                so2 = getRandomInt(2, 10);
-                answer = so1 * so2;
+                [so1, so2] = getDivisibleNumbers(200, 2); // so1 chia hết cho so2
+                answer = so1 * so2; // Nhân bình thường
                 explanationTemplate = `${so1} × ${so2} = ${answer}, nhân số lượng.`;
             } else if (operation === 'subtraction') {
-                so1 = getRandomInt(50, 200);
-                so2 = getRandomInt(1, so1 - 1);
-                answer = so1 - so2;
+                [so1, so2] = getDivisibleNumbers(200, 2); // so1 chia hết cho so2
+                answer = so1 - so2; // Trừ bình thường
                 explanationTemplate = `${so1} - ${so2} = ${answer}, trừ để tìm còn lại.`;
             } else if (operation === 'addition') {
-                so1 = getRandomInt(1, 100);
-                so2 = getRandomInt(1, 100);
-                answer = so1 + so2;
+                [so1, so2] = getDivisibleNumbers(200, 2); // so1 chia hết cho so2
+                answer = so1 + so2; // Cộng bình thường
                 explanationTemplate = `${so1} + ${so2} = ${answer}, cộng để tìm tổng.`;
             }
             // Thay so1, so2 trong question
